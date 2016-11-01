@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+
+<% include header.ejs %>
+
+<body>
+
+  <% include navigation.ejs %>
+
+  <div class="title-container">
+
+      <h1>About</h1>
+      <h2>Nejc</h2>
+
+  </div>
+
+  <div class="text-about">
+    <p>
+         <div class="avatar-image"></div>
+
+        Some bullshit description no one reads anyway.
+
+    </p>
+  </div>
+
+  <div class="cta-container">
+      <div class="cta-button">Hire me!</div>
+      <br/>
+      <div class="form-container">
+          <form>
+
+              <div class="form-block">
+                  <div class="label-container">
+                      <label>Email</label>
+                  </div>
+                  <input class="form-element" id="email" name="email" type="email" required />
+              </div>
+
+              <div class="form-block">
+                  <div class="label-container">
+                      <label>Company</label>
+                  </div>
+                  <input class="form-element" id="company" name="company" type="text" required />
+              </div>
+
+              <div class="form-block">
+                  <div class="label-container">
+                      <label>Website</label>
+                  </div>
+                  <input id="website" name="website" id="website" class="form-element" type="url" />
+              </div>
+
+              <div class="form-block">
+                  <div class="label-container">
+                      <label>Job description</label>
+                  </div>
+                  <textarea class="form-element" id="jobDescription" name="jobDescription" required ></textarea>
+              </div>
+
+              <div class="form-block">
+                  <div class="label-container">
+                      <label>Budget</label>
+                  </div>
+                 <input class="form-element" id="budget" name="budget" type="number" required>
+              </div>
+
+          </form>
+
+          <div type="submit" class="submit-button">Submit</div>
+          
+      </div>
+  </div>
+
+  <%- include footer.ejs %>
+
+<script src="/static/js/about.js"></script>
+
+</body>
+</html>
